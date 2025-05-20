@@ -8,7 +8,6 @@ And, don't worry, the mod adapts automatically if you are using the remastered O
 All of these behaviours can be changed to the user's preferences, through the options screen.  
 
 ## Some credits
-Main mod's page: https://gamebanana.com/mods/435775  
 The original soundtrack was converted from VGM, to have the highest quality possible. These are the VGM files for both [final](https://vgmrips.net/packs/pack/sonic-the-hedgehog-3-mega-drive-genesis) and [prototype](https://vgmrips.net/packs/pack/sonic-knuckles-mega-drive-genesis) releases.  
 Remastered soundtrack was taken here: https://github.com/Eukaryot/sonic3air/tree/main/Oxygen/sonic3air/data/audio/remastered
 
