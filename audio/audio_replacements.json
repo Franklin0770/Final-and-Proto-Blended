@@ -1,0 +1,67 @@
+/*
+	This .json was made to change in-game music.
+	You can find more information here (and a very useless correction by me in the comments!): https://gamebanana.com/tuts/13479.
+	The original remastered files were found here: https://github.com/Eukaryot/sonic3air/tree/main/Oxygen/sonic3air/data/audio/remastered.
+	I am aware the variables are a bit unreadable; however, I couldn't get the fast themes working otherwise.
+*/
+
+{
+	// Final Emulated CNZ
+	"carnivalnightfinalemulated":			{ "File": "Carnival Night Zone Final Emulated.ogg", "Type": "Music" },
+	"carnivalnightfinalemulated_fast":  	{ "File": "Carnival Night Zone Final Fast Emulated.ogg", "Type": "Music" },
+	
+	// Prototype Emulated CNZ
+	"carnivalnightprotoemulated":			{ "File": "Carnival Night Zone Prototype Emulated.ogg", "Type": "Music", "LoopStart": "2880581" },
+	"carnivalnightprotoemulated_fast":		{ "File": "Carnival Night Zone Prototype Fast Emulated.ogg", "Type": "Music", "LoopStart": "2215831" },
+	
+	// Final Remastered CNZ
+	"carnivalnightfinalremastered":			{ "File": "Carnival Night Zone Final Remastered.ogg", "Type": "Music" },
+	"carnivalnightfinalremastered_fast":	{ "File": "Carnival Night Zone Final Fast Remastered.ogg", "Type": "Music" },
+	
+	// Prototype Remastered CNZ
+	"carnivalnightprotoremastered":			{ "File": "Carnival Night Zone Prototype Remastered.ogg", "Type": "Music", "LoopStart": "2881436" },
+	"carnivalnightprotoremastered_fast":	{ "File": "Carnival Night Zone Prototype Fast Remastered.ogg", "Type": "Music", "LoopStart": "2305192" },
+	
+	
+	// Final Emulated ICZ
+	"icecapfinalemulated":			{ "File": "IceCap Zone Final Emulated.ogg", "Type": "Music" },
+	"icecapfinalemulated_fast":		{ "File": "IceCap Zone Final Fast Emulated.ogg", "Type": "Music" },
+
+	// Prototype Emulated ICZ
+	"icecapprotoemulated":			{ "File": "IceCap Zone Prototype Emulated.ogg", "Type": "Music", "LoopStart": "170521" },
+	"icecapprotoemulated_fast":		{ "File": "IceCap Zone Prototype Fast Emulated.ogg", "Type": "Music", "LoopStart": "136114" },
+
+	// Final Emulated LBZ
+	"launchbasefinalemulated":		{ "File": "Launch Base Zone Final Emulated.ogg", "Type": "Music" },
+	"launchbasefinalemulated_fast":	{ "File": "Launch Base Zone Final Fast Emulated.ogg", "Type": "Music" },
+
+	// Prototype Emulated LBZ
+	"launchbaseprotoemulated":		{ "File": "Launch Base Zone Prototype Emulated.ogg", "Type": "Music", "LoopStart": "3604965" },
+	"launchbaseprotoemulated_fast":	{ "File": "Launch Base Zone Prototype Fast Emulated.ogg", "Type": "Music", "LoopStart": "2883642" },
+
+
+	// Final Remastered ICZ
+	"icecapfinalremastered":			{ "File": "IceCap Zone Final Remastered.ogg", "Type": "Music" },
+	"icecapfinalremastered_fast":		{ "File": "IceCap Zone Final Fast Remastered.ogg", "Type": "Music" },
+
+	// Prototype Remastered ICZ
+	"icecapprotoremastered":			{ "File": "IceCap Zone Prototype Remastered.ogg", "Type": "Music", "LoopStart": "169643" },
+	"icecapprotoremastered_fast":		{ "File": "IceCap Zone Prototype Fast Remastered.ogg", "Type": "Music", "LoopStart": "135710" },
+
+	// Final Remastered LBZ
+	"launchbasefinalremastered":		{ "File": "Launch Base Zone Final Remastered.ogg", "Type": "Music" },
+	"launchbasefinalremastered_fast":	{ "File": "Launch Base Zone Final Fast Remastered.ogg", "Type": "Music" },
+
+	// Prototype Remastered LBZ
+	"launchbaseprotoremastered":		{ "File": "Launch Base Zone Prototype Remastered.ogg", "Type": "Music", "LoopStart": "3603767" },
+	"launchbaseprotoremastered_fast":	{ "File": "Launch Base Zone Prototype Fast Remastered.ogg", "Type": "Music", "LoopStart": "2882842" },
+	
+	
+	// HPZ
+	"PPZ_music":		{ "File": "Purple Palace Zone.ogg", "Type": "Music" },
+	"PPZ_music_fast":	{ "File": "Purple Palace Zone Fast.ogg", "Type": "Music" },
+	
+	// Knuckles Fight
+	"FA":	{ "File": "Purple Palace Zone & Knuckles.ogg", "Type": "Music", "LoopStart": "158720" }
+}
+// Please, do not redistribute any part from any file in this mod. Everything was made by me, so ask first. Thank you.

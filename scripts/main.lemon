@@ -1,0 +1,311 @@
+/*
+	Hey SEGA, very impressive for such ambitious game, but remember next time you can use both soundtracks, so the music doesn't get too repetitive.
+	Tutorials (you can see me asking things in one of these): https://gamebanana.com/tuts/15706, https://gamebanana.com/tuts/13440
+	All variables, constants and functions can be found here: https://github.com/Eukaryot/sonic3air/tree/main/Oxygen/sonic3air/scripts
+*/
+
+global u8 carnivalnight1_music
+global u8 carnivalnight2_music
+global u8 icecap1_music
+global u8 icecap2_music
+global u8 launchbase1_music
+global u8 launchbase2_music
+global u8 soundtrack_type
+global u8 purplepalacezone_music
+global u8 knucklesfight_music
+
+/*-------------*\
+| Music Manager |
+\*-------------*/
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+	// CNZ Act 1
+	if (sfxId == 0x07)
+	{
+		if (carnivalnight1_music == 0) // Final Blended
+		{
+			if ((Audio.getAudioKeyType("07") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "carnivalnightfinalemulated"
+			}
+			else // Remastered
+			{
+				return "carnivalnightfinalremastered"
+			}
+		}
+		else if (carnivalnight1_music == 1) // Prototype
+		{
+			if ((Audio.getAudioKeyType("07") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "carnivalnightprotoemulated"
+			}
+			else // Remastered
+			{
+				return "carnivalnightprotoremastered"
+			}
+		}
+		else if (carnivalnight1_music == 2) // Act 1 Final
+		{
+			return "07"
+		}
+		else if (carnivalnight1_music == 3) // Act 2 Final
+		{
+			return "08"
+		}
+		else if (carnivalnight1_music == 4) // Act 1 Prototype
+		{
+			return "07_proto"
+		}
+		else if (carnivalnight1_music == 5) // Act 2 Prototype
+		{
+			return "08_proto"
+		}
+	}
+	
+	// CNZ Act 2
+	if (sfxId == 0x08)
+	{
+		if (carnivalnight2_music == 0) // Final Blended
+		{
+			if ((Audio.getAudioKeyType("08") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "carnivalnightfinalemulated"
+			}
+			else // Remastered
+			{
+				return "carnivalnightfinalremastered"
+			}
+		}
+		else if (carnivalnight2_music == 1) // Prototype Blended
+		{
+			if ((Audio.getAudioKeyType("08") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "carnivalnightprotoemulated"
+			}
+			else // Remastered
+			{
+				return "carnivalnightprotoremastered"
+			}
+		}
+		else if (carnivalnight2_music == 2) // Act 1 Final
+		{
+			return "07"
+		}
+		else if (carnivalnight2_music == 3) // Act 2 Final
+		{
+			return "08"
+		}
+		else if (carnivalnight2_music == 4) // Act 1 Prototype
+		{
+			return "07_proto"
+		}
+		else if (carnivalnight2_music == 5) // Act 2 Prototype
+		{
+			return "08_proto"
+		}
+	}
+	
+	// ICZ Act 1
+	if (sfxId == 0x0B)
+	{
+		if (icecap1_music == 0) // Final Blended
+		{
+			if ((Audio.getAudioKeyType("0B") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "icecapfinalemulated"
+			}
+			else // Remastered
+			{
+				return "icecapfinalremastered"
+			}
+		}
+		else if (icecap1_music == 1) // Prototype Blended
+		{
+			if ((Audio.getAudioKeyType("0B") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "icecapprotoemulated"
+			}
+			else // Remastered
+			{
+				return "icecapprotoremastered"
+			}
+		}
+		else if (icecap1_music == 2)
+		{
+			return "0B" // Act 1 Final
+		}
+		else if (icecap1_music == 3)
+		{
+			return "0C" // Act 2 Final
+		}
+		else if (icecap1_music == 4)
+		{
+			return "0B_proto" // Act 1 Prototype
+		}
+		else if (icecap1_music == 5) // Act 2 Prototype
+		{
+			return "0C_proto"
+		}
+	}
+	
+	// ICZ Act 2
+	if (sfxId == 0x0C)
+	{
+		if (icecap2_music == 0) // Final Blended
+		{
+			if ((Audio.getAudioKeyType("0C") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "icecapfinalemulated"
+			}
+			else // Remastered
+			{
+				return "icecapfinalremastered"
+			}
+		}
+		else if (icecap2_music == 1) // Prototype Blended
+		{
+			if ((Audio.getAudioKeyType("0C") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "icecapprotoemulated"
+			}
+			else // Remastered
+			{
+				return "icecapprotoremastered"
+			}
+		}
+		else if (icecap2_music == 2) // Act 1 Final
+		{
+			return "0B"
+		}
+		else if (icecap2_music == 3) // Act 2 Final
+		{
+			return "0C"
+		}
+		else if (icecap2_music == 4) // Act 1 Prototype
+		{
+			return "0B_proto"
+		}
+		else if (icecap2_music == 5) // Act 2 Prototype
+		{
+			return "0C_proto"
+		}
+	}
+
+	// LBZ Act 1
+	if (sfxId == 0x0D)
+	{
+		if (launchbase1_music == 0) // Final Blended
+		{
+			if ((Audio.getAudioKeyType("0D") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "launchbasefinalemulated"
+			}
+			else // Remastered
+			{
+				return "launchbasefinalremastered"
+			}
+		}
+		else if (launchbase1_music == 1) // Prototype Blended
+		{
+			if ((Audio.getAudioKeyType("0D") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "launchbaseprotoemulated"
+			}
+			else ((Audio.getAudioKeyType("0D") == 2 && soundtrack_type == 0) || soundtrack_type == 2) // Remastered
+			{
+				return "launchbaseprotoremastered"
+			}
+		}
+		else if (launchbase1_music == 2) // Act 1 Final
+		{
+			return "0D"
+		}
+		else if (launchbase1_music == 3) // Act 2 Final
+		{
+			return "0E"
+		}
+		else if (launchbase1_music == 4) // Act 1 Prototype
+		{
+			return "0D_proto"
+		}
+		else if (launchbase1_music == 5) // Act 2 Prototype
+		{
+			return "0E_proto"
+		}
+	}
+	
+	// LBZ Act 2
+	if (sfxId == 0x0E)
+	{
+		if (launchbase2_music == 0) // Final Blended
+		{
+			if ((Audio.getAudioKeyType("0E") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "launchbasefinalemulated"
+			}
+			else // Remastered
+			{
+				return "launchbasefinalremastered"
+			}
+		}
+		else if (launchbase2_music == 1) // Prototype Blended
+		{
+			if ((Audio.getAudioKeyType("0E") == 1 && soundtrack_type == 0) || soundtrack_type == 1) // Emulated
+			{
+				return "launchbaseprotoemulated"
+			}
+			else // Remastered
+			{
+				return "launchbaseprotoremastered"
+			}
+		}
+		else if (launchbase2_music == 2) // Act 1 Final
+		{
+			return "0D"
+		}
+		else if (launchbase2_music == 3) // Act 2 Final
+		{
+			return "0E"
+		}
+		else if (launchbase2_music == 4) // Act 1 Prototype
+		{
+			return "0D_proto"
+		}
+		else if (launchbase1_music == 5) // Act 2 Prototype
+		{
+			return "0E_proto"
+		}
+	}
+	
+	// HPZ Bonus
+	if (sfxId == 0x14 && purplepalacezone_music == 1)
+	{
+		if (global.zone_act == 0x1601 || global.zone_act == 0x1701)	// Had to use this since the game doesn't differenciate the music between LRZ Act 2 and HPZ
+		{
+			return "PPZ_music"
+		}
+	}
+    return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+/*--------------*\
+| Knuckles Fight |
+\*--------------*/
+
+#if STANDALONE
+function u8 BossHPZKnuckles.chooseMusicTrack() // This function doesn't support returning string variables...
+{
+	if (knucklesfight_music == 1)
+	{
+		return 0xFA // ...so I recycled an unutilized hexadecimal value instead. 
+	}
+	else
+	{
+		return base.BossHPZKnuckles.chooseMusicTrack()
+	}
+	return MUSIC_KNUCKLES // This is just a fallback constant, which should not be reached.
+}
+#endif
+
+// Hi, welcome to the bottom. Per favore (please), let me know first if you want to take any scripts here.	- Brotherhood0

@@ -1,0 +1,156 @@
+{
+	"Metadata":
+	{
+		"Name": "Final and Proto Blended",
+		"Author": "Brotherhood0",
+		"Description": "This mod provides final and proto remastered hybrid music to their respective acts (+ a little bonus!).",
+		"URL": "https://gamebanana.com/mods/435775",
+		"ModVersion": "2.2.1"
+	},
+	
+	"Settings":
+	{
+		"List":
+		[
+			{
+				"InternalName": "Carnival Night Act 1 Switches",
+				"DisplayName": "Carnival Night Act 1",
+				"Variable": "carnivalnight1_music",
+				"DefaultValue": "0",
+				"Category": "Act Music",
+				"Options":	
+				{
+					"0": "Final Medley",
+					"1": "Prototype Medley",
+					"2": "Act 1 Final",
+					"3": "Act 2 Final",
+					"4": "Act 1 Prototype",
+					"5": "Act 2 Prototype",
+					"6": "Disabled (Options)"
+				}
+			},
+			{
+				"InternalName": "Carnival Night Act 2 Switches",
+				"DisplayName": "Carnival Night Act 2",
+				"Variable": "carnivalnight2_music",
+				"DefaultValue": "1",
+				"Category": "Act Music",
+				"Options":	
+				{
+					"0": "Final Medley",
+					"1": "Prototype Medley",
+					"2": "Act 1 Final",
+					"3": "Act 2 Final",
+					"4": "Act 1 Prototype",
+					"5": "Act 2 Prototype",
+					"6": "Disabled (Options)"
+				}
+			},
+			{
+				"InternalName": "IceCap Act 1 Switches",
+				"DisplayName": "IceCap Act 1",
+				"Variable": "icecap1_music",
+				"DefaultValue": "0",
+				"Category": "Act Music",
+				"Options":	
+				{
+					"0": "Final Medley",
+					"1": "Prototype Medley",
+					"2": "Act 1 Final",
+					"3": "Act 2 Final",
+					"4": "Act 1 Prototype",
+					"5": "Act 2 Prototype",
+					"6": "Disabled (Options)"
+				}
+			},
+			{
+				"InternalName": "IceCap Act 2 Switches",
+				"DisplayName": "IceCap Act 2",
+				"Variable": "icecap2_music",
+				"DefaultValue": "1",
+				"Category": "Act Music",
+				"Options":
+				{
+					"0": "Final Medley",
+					"1": "Prototype Medley",
+					"2": "Act 1 Final",
+					"3": "Act 2 Final",
+					"4": "Act 1 Prototype",
+					"5": "Act 2 Prototype",
+					"6": "Disabled (Options)"
+				}
+			},
+			{
+				"InternalName": "Launch Base Act 1 Switches",
+				"DisplayName": "Launch Base Act 1",
+				"Variable": "launchbase1_music",
+				"DefaultValue": "0",
+				"Category": "Act Music",
+				"Options":
+				{
+					"0": "Final Medley",
+					"1": "Prototype Medley",
+					"2": "Act 1 Final",
+					"3": "Act 2 Final",
+					"4": "Act 1 Prototype",
+					"5": "Act 2 Prototype",
+					"6": "Disabled (Options)"
+				}
+			},
+			{
+				"InternalName": "Launch Base Act 2 Switches",
+				"DisplayName": "Launch Base Act 2",
+				"Variable": "launchbase2_music",
+				"DefaultValue": "1",
+				"Category": "Act Music",
+				"Options":
+				{
+					"0": "Final Medley",
+					"1": "Prototype Medley",
+					"2": "Act 1 Final",
+					"3": "Act 2 Final",
+					"4": "Act 1 Prototype",
+					"5": "Act 2 Prototype",
+					"6": "Disabled (Options)"
+				}
+			},
+			{
+				"InternalName": "Soundtrack Type Switches",
+				"DisplayName": "Soundtrack Override",
+				"Variable": "soundtrack_type",
+				"DefaultValue": "0",
+				"Category": "Soundtrack Type",
+				"Options":	
+				{
+					"0": "Off (Auto)",
+					"1": "Emulated",
+					"2": "Remastered"
+				}
+			},
+			{
+				"InternalName": "Purple Palace Zone",
+				"DisplayName": "Hidden Palace Zone",
+				"Variable": "purplepalacezone_music",
+				"DefaultValue": "0",
+				"Category": "Bonus Features",
+				"Options":	
+				{
+					"0": "Disabled (Options)",
+					"1": "Unique"
+				}
+			},
+			{
+				"InternalName": "Knuckles Fight",
+				"DisplayName": "Knuckles Fight",
+				"Variable": "knucklesfight_music",
+				"DefaultValue": "0",
+				"Category": "Bonus Features",
+				"Options":	
+				{
+					"0": "Disabled (Options)",
+					"1": "Unique"
+				}
+			}
+		]
+	}
+}
