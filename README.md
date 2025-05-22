@@ -26,5 +26,5 @@ You aren't wrong.
 I coded this mod while I was barely understanding C# code, so I was a rookie.  
 Sorry for hurting your eyes, I promise I know better now (like doing a switch statement, or, even better, array tables)!
 
-##### Why is Carnival Night Zone only prototype by default?
+##### Why was Carnival Night Zone added only in 2.1?
 Because I honestly don't really like the final tune (I was a little narcissistic back then, apologies).
